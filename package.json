@@ -6,7 +6,6 @@
   "scripts": {
     "test": "jest --coverage",
     "devStart": "nodemon server.js"
-    "install": "npm install"
   },
   "keywords": [],
   "author": "",
