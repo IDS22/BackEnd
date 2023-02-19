@@ -42,7 +42,7 @@ const login = async (req, res) => {
 
         if(data.password == req.body.password){
             console.log(data._id);
-            const AccessToken = jwt.sign({password: data.password, mail: data.mail, userId: data._id}, process.env.ACCESS_JWTkey, {expiresIn: '15s' });
+            const AccessToken = jwt.sign({password: data.password, mail: data.mail, userId: data._id}, process.env.ACCESS_JWTkey, {expiresIn: '1h' });
             const ttoken = new tokenCollection({
                 token: AccessToken
             })
