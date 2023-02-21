@@ -13,3 +13,10 @@ Per eseguire il progetto in locale:
   1.3 eseguire "npm start" per avviare il progetto
   
 Dopo di che il progetto verrà visualizzato nel browser a "localhost:3000/"
+
+
+Definire le seguenti variabili di ambiente alla root del backend:
+
+ACCESS_JWTkey = '' (chiave per decodificare i Token)
+
+MONGODB_URI = '' (link al vostro database di mongoDB)
